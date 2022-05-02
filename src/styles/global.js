@@ -17,6 +17,6 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: black;
+        background-color: #ddd;
     }
 `;
