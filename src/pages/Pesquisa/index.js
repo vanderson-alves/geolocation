@@ -1,11 +1,18 @@
 import React from "react";
 
+ import {Container, Titulo, Subtitulo, Input} from './styles'
 
 function Pesquisa() {
     return (
       <div>
-          <h1>PÁGINA</h1>
-          <h2>DE PESQUISA</h2>
+
+      <Container>
+
+          <Titulo>Um texto um pouco aleatório aqui.</Titulo>
+          <Subtitulo>Um subtitulo legal aqui.</Subtitulo>
+          <Input><input className="input-estilo" placeholder="Seu endereço."/></Input>
+         
+      </Container>          
       </div>
     );
   }

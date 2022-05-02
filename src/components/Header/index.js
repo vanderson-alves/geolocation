@@ -5,7 +5,6 @@ import {Head, Container, Titulo} from './styles'
 
 function Header() {
     return (
-
       <Container>
           <Head>
                <Titulo className="logo">
