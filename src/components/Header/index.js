@@ -1,13 +1,18 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
-import {Titulo} from './styles'
+import {Head, Container, Titulo} from './styles'
 
 function Header() {
     return (
 
-      <Titulo>
-              <h1>HEEEEEAAADERR.</h1>
-      </Titulo>
+      <Container>
+          <Head>
+               <Titulo className="logo">
+                  <Link to="/">OCTUPUS</Link>
+               </Titulo>   
+          </Head>
+      </Container>
     );
   }
   
