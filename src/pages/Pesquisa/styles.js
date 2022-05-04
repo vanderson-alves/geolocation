@@ -29,4 +29,8 @@ export const Input = styled.div`
     }
 `;
 
+export const Botao = styled.h1`
+    
+`;
+
 
