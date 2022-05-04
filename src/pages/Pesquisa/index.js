@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
- import {Container, Titulo, Subtitulo, Input, Botao} from './styles'
+ import {Container, Titulo, Subtitulo, Input} from './styles'
 
 function Pesquisa() {
 
