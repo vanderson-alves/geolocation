@@ -1,10 +1,8 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-
-
-
- import {Container, Titulo, Subtitulo, Input} from './styles'
+import {Container, Titulo, Subtitulo, Input} from './styles'
+import api from '../../services/api'
 
 function Pesquisa() {
 
@@ -24,6 +22,8 @@ function Pesquisa() {
         .then(response => response.json())
         .then( data => setDetails(data))
       })
+
+
        
  /*     function atualizaEndereco() {
         <Botao><Link>Usar minha localização atual: {details.city}, {details.country_name}</Link></Botao>
@@ -40,7 +40,8 @@ function Pesquisa() {
             {/*<li>Latitude: {details.latitude}</li>
             <li>Longitude: {details.longitude}</li> */}
             <button onClick={event =>  window.location.href='/planos'}>Usar minha localização atual: {details.city}, {details.country_name}</button>
-            
+            <h5>Latitude: {latitude}</h5>
+            <h5>Longitude: {longitude}</h5>
           </ul>}
             
           <Titulo>Um texto um pouco aleatório aqui.</Titulo>
